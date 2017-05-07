@@ -1,0 +1,23 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Учебная задача",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "static . --port=8900"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kseniyamikhel/chat.git"
+  },
+  "author": "Kseniya Mikhel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kseniyamikhel/chat/issues"
+  },
+  "homepage": "https://github.com/kseniyamikhel/chat#readme",
+  "devDependencies": {
+    "node-static": "^0.7.9"
+  }
+}
