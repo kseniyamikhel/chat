@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/kseniyamikhel/chat#readme",
   "devDependencies": {
-    "node-static": "^0.7.9"
+    "node-static": "^0.7.9",
+    "pug": "^2.0.0-rc.1",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
