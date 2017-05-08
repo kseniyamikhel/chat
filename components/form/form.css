@@ -1,0 +1,36 @@
+.messageText{
+    resize: vertical;
+}
+.form{
+    padding: 5px;
+}
+.form__buttonsubmit{
+    border: 1px solid darkslateblue;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: cornflowerblue;
+    color: darkslateblue;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: inline-block;
+    float: right;
+}
+.form__username{
+    width: 120px;
+    height: 40px;
+    border: 1px solid darkslateblue;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    float: left;
+}
+.form__messagetext{
+    width: 700px;
+    height: 40px;
+    border: 1px solid darkslateblue;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    float: left;
+}
