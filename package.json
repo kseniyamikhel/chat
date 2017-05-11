@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "static . --port=8900"
+    "serve": "npm run build && static . --port=8900",
+    "build": "pug --client --name=chatTmpl components/messages/messages.tmpl.pug"
   },
   "repository": {
     "type": "git",
