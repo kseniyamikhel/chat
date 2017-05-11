@@ -1,5 +1,5 @@
 .messageText{
-    resize: vertical;
+    resize: none;
 }
 .form{
     padding: 5px;
@@ -26,7 +26,7 @@
     float: left;
 }
 .form__messagetext{
-    width: 700px;
+    width: 400px;
     height: 40px;
     border: 1px solid darkslateblue;
     border-radius: 10px;

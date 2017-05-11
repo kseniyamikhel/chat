@@ -9,8 +9,10 @@
         render(){
             let messagesHTML = this.data.messages.map(mData => {
                 return `<div class="messages__message">
-                    <span class="message__author">${mData.username}</span><br />
-                    <span class="message__content">${mData.message}</span>
+                    <span class="message__author">${mData.username}</span>
+                    <span class="message__time">${mData.time.getHours() + ':' + mData.time.getMinutes()}</span><br />
+                    <div class="message__content">${mData.message}</div>
+                    
                 </div>`
             }).join('');
             this.el.innerHTML = `${messagesHTML}`;

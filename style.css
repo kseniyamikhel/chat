@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-.wrapper{
+.appChat{
     margin: 5px auto;
-    width: 1000px;
+    width: 700px;
     position: relative;
 }
 
