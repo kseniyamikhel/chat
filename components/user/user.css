@@ -1,10 +1,7 @@
-.messageText{
-    resize: none;
-}
-.form{
+.userForm{
     padding: 5px;
 }
-.form__buttonsubmit{
+.userForm__buttonsubmit{
     border: 1px solid darkslateblue;
     border-radius: 10px;
     width: 100px;
@@ -14,26 +11,22 @@
     font-weight: bold;
     font-size: 1.2rem;
     display: inline-block;
-    float: right;
     outline: none;
 }
-.form__username{
+.userForm__username{
     width: 120px;
     height: 40px;
     border: 1px solid darkslateblue;
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
-    float: left;
     outline: none;
 }
-.form__messagetext{
-    width: 400px;
-    height: 40px;
-    border: 1px solid darkslateblue;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 5px;
-    float: left;
-    outline: none;
+.welcome__content{
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkslateblue;
+}
+.welcome{
+    text-align: center;
 }

@@ -14,7 +14,6 @@
         render(){
             this.el.innerHTML = `
                 <form class="form">
-                    <input type="text" name="username" placeholder="Your name" class="form__username" required/>
                     <textarea name="message" placeholder="Write your message..." class="form__messagetext" required></textarea>
                     <input type="submit" value="Send" class="form__buttonsubmit" />
 			    </form>

@@ -9,7 +9,7 @@
     position: relative;
 }
 
-#formWrap{
+#formWrap, #userWrap{
     width: 100%;
     border: 1px darkslateblue solid;
     padding: 10px;

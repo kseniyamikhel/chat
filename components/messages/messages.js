@@ -20,7 +20,12 @@
             this.el.innerHTML = `${messagesHTML}`;*/
             this.el.innerHTML = tmpl(this.data);
         }
-        addMessage(message){
+        addMessage(username, messageContent){
+            let message = {
+                username: username,
+                messageContent: messageContent.message,
+                time: messageContent.time
+            };
             this.data.messages.push(message);
         }
     }
