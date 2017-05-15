@@ -33,7 +33,7 @@
             names.forEach(el => {
                 data[el.name] = el.value;
             });
-            data.time = new Date();
+            data.time = new Date().toLocaleString('ru', { hour: '2-digit', minute: '2-digit' });
             return data;
         }
     }

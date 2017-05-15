@@ -3,6 +3,7 @@
     const Messages = window.Messages;
     const Form = window.Form;
     const User = window.User;
+    const Http = window.Http;
 
     class App {
         constructor({el}){
@@ -24,18 +25,43 @@
         }
 
         _initComponents(){
+
+
             let user = new User({el: this.userWrap});
             user.render();
-           user.onSubmit = (username) => {
+            user.onSubmit = (username) => {
                 this.username = username;
             };
+
             let form = new Form({el: this.formWrap});
             form.render();
+
             let messages = new Messages({el: this.messagesWrap});
             messages.render();
+
+            let http = new Http({path: 'https://chat-f30aa.firebaseio.com/messages.json'});
+            setTimeout(function refresh() {
+                http.makeRequest( data => {
+                    let chatData = Object.values(data);
+                    messages.setMessages(chatData);
+                    messages.render();
+                });
+            setTimeout(refresh, 500);
+            }, 500);
+
             form.onSubmit = (message) => {
-                messages.addMessage(this.username || 'Anonymous', message);
-                messages.render();
+                let sendData = {
+                    user: this.username || 'Anonymous',
+                    message: message.message,
+                    time: message.time
+                };
+                http.makeRequest( (data => {
+                    http.makeRequest( data => {
+                        let chatData = Object.values(data);
+                        messages.setMessages(chatData);
+                        messages.render();
+                    });
+                }), sendData, 'POST');
                 form.render();
             };
         }

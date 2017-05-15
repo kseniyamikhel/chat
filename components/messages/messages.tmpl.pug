@@ -1,7 +1,7 @@
 each message in messages
     div.messages__message
         span.message__author=message.username
-        span.message__time=message.time.toLocaleString('ru', { hour: '2-digit', minute: '2-digit' })
+        span.message__time=message.time
         br
         div.message__content=message.messageContent
 
